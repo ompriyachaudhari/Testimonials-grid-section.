@@ -1,0 +1,260 @@
+* {
+    padding: 0%;
+    margin: 0%;
+    font-family: Barlow Semi Condensed;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    width: 100vw;
+    background-color: hsl(260, 100%, 95%);
+}
+
+.main-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    background-color: hsl(260, 100%, 95%);
+    height: 80vh;
+    width: 80vw;
+    grid-row-gap: 1rem;
+    grid-column-gap: 1.5rem;
+
+}
+
+.box {
+    border-radius: 0.5rem;
+    padding: 2rem;
+    margin-bottom: 1rem;
+
+}
+
+/* FOR BOX1 */
+.box1 {
+    background-color: hsl(263, 55%, 52%);
+    grid-row-start: 1;
+    grid-row-end: 2;
+    grid-column-start: 1;
+    grid-column-end: 3;
+    box-shadow: 20px 30px 40px rgba(72, 85, 106, 0.2);
+
+}
+
+/* FOR BOX2 */
+.box2 {
+    background-color: hsl(217, 19%, 35%);
+    grid-row-start: 1;
+    grid-row-end: 2;
+    grid-column-start: 3;
+    grid-column-end: 4;
+}
+
+/* FOR BOX3*/
+.box3 {
+    background-color: hsl(0, 0%, 100%);
+    grid-row-start: 1;
+    grid-row-end: 3;
+    grid-column-start: 4;
+    grid-column-end: 5;
+    box-shadow: 15px 15px 100px 15px hsl(0, 0%, 81%);
+}
+
+/* FOR BOX4 */
+.box4 {
+    background-color: white;
+    grid-row-start: 2;
+    grid-row-end: 3;
+    grid-column-start: 1;
+    grid-column-end: 2;
+}
+
+
+
+/* FOR BOX5 */
+.box5 {
+    background-color: hsl(219, 29%, 14%);
+    grid-row-start: 2;
+    grid-row-end: 3;
+    grid-column-start: 2;
+    grid-column-end: 4;
+}
+
+.box1 {
+    background-color: hsl(263, 55%, 52%);
+
+    background-image: url("images/bg-pattern-quotation.svg");
+    background-repeat: no-repeat;
+    background-position: top right 10%;
+    background-size: 6rem;
+
+    padding: 2rem;
+}
+
+.one {
+    display: flex;
+    align-items: center;
+
+}
+
+.profilePic {
+    background-color: yellow;
+    height: 2rem;
+    width: 2rem;
+    border-radius: 50%;
+    border: 1px solid white;
+}
+
+.box1 .one .profilePic {
+    background-image: url("images/image-daniel.jpg");
+    background-size: cover;
+}
+
+.box2 .one .profilePic {
+    background-image: url("images/image-jonathan.jpg");
+    background-size: cover;
+}
+
+.box3 .one .profilePic {
+    background-image: url("images/image-kira.jpg");
+    background-size: cover;
+}
+
+.box4 .one .profilePic {
+    background-image: url("images/image-jeanette.jpg");
+    background-size: cover;
+}
+
+.box5 .one .profilePic {
+    background-image: url("images/image-patrick.jpg");
+    background-size: cover;
+    border: 1px solid hsl(263, 55%, 52%);
+}
+
+.nameEdu {
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: column;
+    margin-left: 1rem;
+}
+
+.name {
+    font-size: 1rem;
+    font-weight: 600;
+}
+
+.Edu {
+    font-size: 13px;
+    font-weight: 500;
+}
+
+.box1 .one .nameEdu .name,
+.box1 .one .nameEdu .Edu {
+    color: hsl(264, 82%, 80%);
+}
+
+.box2 .one .nameEdu .name,
+.box2 .one .nameEdu .Edu {
+    color: hsl(0, 0%, 81%);
+}
+
+.box3 .one .nameEdu .name,
+.box3 .one .nameEdu .Edu {
+    color: hsl(224, 10%, 45%);
+}
+
+.box4 .one .nameEdu .name,
+.box4 .one .nameEdu .Edu {
+    color: hsl(224, 10%, 45%);
+}
+
+.box5 .one .nameEdu .name,
+.box5 .one .nameEdu .Edu {
+    color: hsl(0, 0%, 81%);
+
+}
+
+
+.heading {
+    font-weight: 600;
+    margin-top: 1rem;
+    font-size: 1.2rem;
+}
+
+.box1 .two .heading {
+    color: hsl(260, 100%, 95%);
+}
+
+.box2 .two .heading {
+    color: white;
+}
+
+.box3 .two .heading {
+    color: hsl(217, 19%, 35%);
+}
+
+.box4 .two .heading {
+    color: hsl(217, 19%, 35%);
+}
+
+.box5 .two .heading {
+    color: hsl(0, 0%, 81%);
+}
+
+.content {
+    font-weight: 600;
+    font-size: 13px;
+    margin-top: 1rem;
+}
+
+.box1 .two .content {
+    color: hsl(264, 82%, 80%);
+}
+
+.box2 .two .content {
+    color: hsl(0, 0%, 81%);
+}
+
+.box3 .two .content {
+    color: hsl(224, 10%, 45%);
+}
+
+.box4 .two .content {
+    color: hsl(224, 10%, 45%);
+}
+
+.box5 .two .content {
+    color: hsl(0, 0%, 81%);
+
+}
+
+@media (max-width:600px) {
+    .main-grid {
+        height: auto;
+        width: 80vw;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .box1 {
+        order: 1;
+    }
+
+    .box2 {
+        order: 2;
+    }
+
+    .box3 {
+        order: 5;
+    }
+
+    .box4 {
+        order: 3;
+    }
+
+    .box5 {
+        order: 4;
+    }
+}
